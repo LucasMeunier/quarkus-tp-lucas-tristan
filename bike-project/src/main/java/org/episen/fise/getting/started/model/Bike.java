@@ -14,5 +14,11 @@ public class Bike {
     private String model;
     private String price;
     private String identifications;
+    private String owner;
 
+    public Bike(String model, String price, String identifications) {
+        this.model = model;
+        this.price = price;
+        this.identifications = identifications;
+    }
 }
