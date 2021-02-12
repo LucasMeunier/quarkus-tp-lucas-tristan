@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package org.episen.fise;
+
+option java_multiple_files = true;
+option java_package = "org.episen.fise.proto";
+
+service Owner{
+  rpc GetOwner(OwnerIdentification) returns (OwnerNameReply){}
+}
+
+message OwnerIdentification{
+  string identification = 1;
+}
+
+message OwnerNameReply{
+  string name = 1;
+}
